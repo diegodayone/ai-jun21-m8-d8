@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #outer-box {
+            display:flex;
+            background-color: aqua;
+            border:2px solid green;
+            height: 100vh;
+        }
+
+        #test2 {
+            display:flex;
+            background-color: aqua;
+            border:2px solid green;
+            height: 100vh;
+        }
+
+        .squares{
+            background: red;
+            border: 2px solid yellow;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer-box">
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+    </div>
+
+    <div id="test2">
+        <div style="flex-grow:2" class="squares"></div>
+        <div style="flex-grow:1" class="squares"></div>
+        <div style="flex-grow:2" class="squares"></div>
+    </div>
+</body>
+</html>
